@@ -1,0 +1,16 @@
+spring:
+  #数据库配置信息
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/rainbowpan
+    username: root
+    password: 112233
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#打印sql日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.example.rainbowend.Dao: debug # com.eth.wallet.mapper 根据你的项目设定
